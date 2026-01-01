@@ -45,7 +45,7 @@ main.py, utility.py, employee.py, data.txt
 
 Open Terminal / CMD in that folder.
 
-Run: python Code.py
+Run: python main.py
 
 Option B: If python command doesn’t work
 Try: python3 main.py
@@ -89,4 +89,5 @@ clear screen uses cls, which works on Windows. On Linux/macOS you may need to ch
 
 Author
 Aranav Paul
+
 
