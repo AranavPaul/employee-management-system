@@ -3,7 +3,7 @@ import os
 
 def check_employee():
     id = int(input("Enter id please: "))
-    emp = Employee.get_employee(id)
+    emp = employee.get_employee(id)
     if emp == 0:
         print("Employee not found")
     else:
@@ -11,18 +11,18 @@ def check_employee():
 
 def adding_employee():
     name = input("Please enter your name: ")
-    id = Employee.add_employee(name)
+    id = employee.add_employee(name)
     print(f"New employee added with id: {id}")
 
 def deleting_employee():
     id = int(input("Enter id to delete:"))
-    if Employee.delete_employee(id) != 0:
+    if employee.delete_employee(id) != 0:
         print(f"User deleted with id {id}")
     else:
         print(f"No id matched to delete")
         
 def get_all_employee():
-    employees = Employee.get_employee()
+    employees = employee.get_employee()
     print("All Employee List - ")
     for id, name in employees.items():
         print(f"{id}: {name}")
@@ -50,4 +50,5 @@ def print_logo():
     
 
     """)
+
 
