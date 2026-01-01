@@ -17,18 +17,18 @@ It stores employee records in a `data.txt` file and provides options to add, sea
 ## Project Structure
 ```text
 employee-management-system/
-│── Code.py        # Main program (run this file)
+│── main.py        # Main program (run this file)
 │── utility.py     # Menu + input/output functions
-│── Employee.py    # File handling + employee operations (read/write data.txt)
+│── employee.py    # File handling + employee operations (read/write data.txt)
 │── data.txt       # Stores employee records
 │── README.md
 
 How it works 
-Code.py runs an infinite loop, shows a menu, and calls functions from utility.py.
+main.py runs an infinite loop, shows a menu, and calls functions from utility.py.
 
-utility.py takes user input and calls methods from Employee.py.
+utility.py takes user input and calls methods from employee.py.
 
-Employee.py reads/writes data.txt and stores employee info as a dictionary like:
+employee.py reads/writes data.txt and stores employee info as a dictionary like:
 {employee_id: 'employee_name'}
 
 
@@ -41,14 +41,14 @@ Option A: Run directly (recommended for beginners)
 Download (or clone) this repository.
 
 Make sure these files are in the same folder:
-Code.py, utility.py, Employee.py, data.txt
+main.py, utility.py, employee.py, data.txt
 
 Open Terminal / CMD in that folder.
 
 Run: python Code.py
 
 Option B: If python command doesn’t work
-Try: python3 Code.py
+Try: python3 main.py
 
 
 Usage
@@ -89,3 +89,4 @@ clear screen uses cls, which works on Windows. On Linux/macOS you may need to ch
 
 Author
 Aranav Paul
+
